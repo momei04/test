@@ -5,7 +5,14 @@
 
 :root {
   font-size: 16px;
-  --black: #e33;
+  --black: #333;
+  --white: #f3f3f3;
+}
+
+a {
+  font-weight: 200;
+  font-family: sans-serif;
+  text-decoration: none;
 }
 
 nav {
@@ -15,7 +22,13 @@ nav {
   padding: 1rem 4rem;
   background-color: var(--black);
   display: flex;
+  align-items: center;
   justify-content: space-between;
+}
+nav .logo {
+  max-height: 4rem;
+  height: 100%;
+  aspect-ratio: 1;
 }
 nav ul {
   display: flex;
@@ -23,6 +36,12 @@ nav ul {
 }
 nav ul li {
   list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 200;
+  font-family: sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
