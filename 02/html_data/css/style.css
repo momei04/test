@@ -1,3 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
 
+a {
+  font-weight: 200;
+}
+
+p {
+  font-weight: 200;
+  max-width: 650px;
+}
+
+body {
+  display: flex;
+  gap: 1rem;
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100vh;
+  background-color: #222;
+  width: max-content;
+}
+nav .logo-container {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  height: min-content;
+  background-size: cover;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3c/Celtic_Park3.jpg");
+  background-color: #333333;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .logo-container .layer {
+  background-color: rgba(0, 0, 0, 0.89);
+  opacity: 0.8;
+  z-index: 2;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+nav .logo-container .logo {
+  height: 50px;
+  z-index: 4;
+  aspect-ratio: 1;
+  align-self: center;
+}
+nav .container {
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #333;
+}
+nav .container a {
+  color: #f3f3f3;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+}
+nav ul li {
+  list-style: none;
+  width: 25vw;
+  padding: 1rem 2rem;
+  transition: 0.4s;
+}
+nav ul li:hover {
+  background-color: #333;
+}
+nav ul li a {
+  color: #f3f3f3;
+  text-decoration: none;
+}
 
 /*# sourceMappingURL=style.css.map */
