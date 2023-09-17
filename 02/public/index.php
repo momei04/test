@@ -12,24 +12,9 @@
     <link rel="stylesheet" href="html_data/css/style.css">
 </head>
 <body>
-<header>
-    <nav>
-        <div>
-            <div class="logo-container">
-                <div class="layer"></div>
-                <img src="https://www.weareboxfish.com/wp-content/uploads/2017/09/celticLogo.png" alt="" class="logo">
-            </div>
-            <ul>
-                <li><a href="html_data/tabs/transfermarket.html">Transfers</a></li>
-                <li><a href="html_data/tabs/matches.html">Matches</a></li>
-                <li><a href="html_data/tabs/line_up.html">Line up</a></li>
-            </ul>
-        </div>
-        <div class="container">
-            <a>Mein Konto</a>
-        </div>
-    </nav>
-</header>
+<?php
+    include("html_data/includes/nav/navigation.php");
+?>
 <div class="main-content">
     <h1>Lorem ipsum...</h1>
 </div>
