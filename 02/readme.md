@@ -1,3 +1,6 @@
-This is just a test to learn github.
+Front End Libraries:
+    -Foundation 
+    - jQuerry
 
-Nothing special just to find out
+Backend
+    - PHP
