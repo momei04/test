@@ -13,7 +13,7 @@
 </head>
 <body>
 <?php
-    include("html_data/includes/nav/navigation.php");
+    require("html_data/includes/nav/navigation.php");
 ?>
 <div class="main-content">
     <h1>Lorem ipsum...</h1>

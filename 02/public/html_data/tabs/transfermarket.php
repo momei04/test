@@ -12,5 +12,8 @@
 <?php
 include("../includes/nav/navigation.php");
 ?>
+<div class="main-content">
+    <h1>Transfermarket</h1>
+</div>
 </body>
 </html>
