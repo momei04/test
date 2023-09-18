@@ -18,7 +18,7 @@ p{
 body{
   display: flex;
   gap: 1rem;
-  overflow-x: hidden;
+  //overflow-x: hidden;
 }
 
 nav{
@@ -44,7 +44,7 @@ nav{
     align-items: center;
     & .layer{
       background-color: rgba(0, 0, 0, 0.89);
-      opacity: .8;
+      opacity: .6;
       z-index:2;
       position: absolute;
       height: 100%;
@@ -92,6 +92,38 @@ nav{
 }
 
 .main-content{
-  width: 100%;
-  padding: 2rem 0;
-}
+
+  width: calc(100% - 25% - 3rem);
+  max-width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  padding: 2rem 1rem 2rem 0;
+
+  & .match-day{
+    height: calc(100vh - 4rem);
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    grid-template-areas: "main p-1"
+  "main p-2";
+    gap: 1rem;
+    & .panel {
+      height: 100%;
+      width: 100%;
+      background-color: #eaeaea;
+
+      &.panel-main{
+        height: 100%;
+        grid-area: main;
+      }
+      &.panel-1{
+        height: 100%;
+        grid-area: p-1;
+      }
+      &.panel-2{
+        height: 100%;
+        grid-area: p-2;
+      }
+    }
+    }
+  }
