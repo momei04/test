@@ -1,6 +1,6 @@
 <?php
 
-namespace database;
+namespace public\html_data\tabs\database;
 
 class Player
 {
@@ -32,7 +32,7 @@ class Player
         } else {
             echo $response;
         }
-        return$response;
+        return $response;
     }
 }
 

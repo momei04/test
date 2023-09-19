@@ -97,33 +97,33 @@ nav{
   max-width: 100%;
   box-sizing: border-box;
   position: relative;
-  padding: 2rem 1rem 2rem 0;
+  padding: 2rem 2rem 2rem 0;
 
   & .match-day{
     height: calc(100vh - 4rem);
     display: grid;
+    gap: 1rem;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(2, 50%);
     grid-template-areas: "main p-1"
-  "main p-2";
-    gap: 1rem;
+                        "main p-2";
+
     & .panel {
       height: 100%;
       width: 100%;
+      padding: 1rem;
       background-color: #eaeaea;
+      border-radius: .5rem;
 
       &.panel-main{
-        height: 100%;
         grid-area: main;
       }
       &.panel-1{
-        height: 100%;
         grid-area: p-1;
       }
       &.panel-2{
-        height: 100%;
         grid-area: p-2;
       }
     }
-    }
   }
+}

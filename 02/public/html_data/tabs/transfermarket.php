@@ -11,8 +11,7 @@
 <body>
 <?php
 
-use database\Player;
-$player = new Player();
+
 include("../includes/nav/navigation.php");
 ?>
 <div class="main-content">

@@ -14,18 +14,31 @@
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="html_data/css/style.css">
 </head>
-<body>
-<?php
-    require("html_data/includes/nav/navigation.php");
-?>
-<div class="main-content">
-    <div class="match-day">
-        <div class="panel panel-main"></div>
-        <div class="panel panel-1"></div>
-        <div class="panel panel-2"></div>
-    </div>
-</div>
-
-</body>
-
+    <body>
+        <?php
+            require("html_data/includes/nav/navigation.php");
+        ?>
+        <div class="main-content">
+            <div class="match-day">
+                <div class="panel panel-main">
+                    <h2>Matches</h2>
+                    <?php
+                        echo "Hier kommen die Ergebnisse des heutigen Spieltages."
+                    ?>
+                </div>
+                <div class="panel panel-1">
+                    <h2>Neue Transfers</h2>
+                    <?php
+                        echo "Hier kommen neueste Transfers und Transferangebote."
+                    ?>
+                </div>
+                <div class="panel panel-2">
+                    <h2>Mein Team</h2>
+                    <?php
+                        echo "Link zu deinem Team."
+                    ?>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
