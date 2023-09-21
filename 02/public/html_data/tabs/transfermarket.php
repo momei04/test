@@ -16,6 +16,11 @@ include("../includes/nav/navigation.php");
 ?>
 <div class="main-content">
     <h1>Transfermarket</h1>
+    <div id="transfer-container">
+
+    </div>
 </div>
+
+<script src="database/transfermarket.js"></script>
 </body>
 </html>
